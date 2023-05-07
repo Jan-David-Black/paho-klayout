@@ -46,10 +46,10 @@ except ImportError:
     pass
 
 socks = None
-try:
-    import socks
-except ImportError:
-    pass
+# try:
+#     import socks
+# except ImportError:
+#     pass
 
 try:
     # Python 3
@@ -68,12 +68,13 @@ try:
 except AttributeError:
     time_func = time.time
 
-try:
-    import dns.resolver
-except ImportError:
-    HAVE_DNS = False
-else:
-    HAVE_DNS = True
+HAVE_DNS = False
+# try:
+#     import dns.resolver
+# except ImportError:
+#     HAVE_DNS = False
+# else:
+#     HAVE_DNS = True
 
 
 if platform.system() == 'Windows':
