@@ -617,6 +617,7 @@ class Client(object):
         # No default callbacks
         self._on_log = None
         self._on_connect = None
+        self._on_pre_connect = None
         self._on_connect_fail = None
         self._on_subscribe = None
         self._on_message = None
